@@ -34,9 +34,9 @@ public class MainActivity extends AppCompatActivity {
     private void initView() {
     }
 
-    public void onButtonClick(View view) {
+    public void doZoomHeadImage(View view) {
         // TODO:
-        LogUtil.d(TAG, "onButtonClick");
+        LogUtil.d(TAG, "doZoomHeadImage");
         Intent intent = new Intent(this, HeadZoomScrollActivity.class);
         startActivity(intent);
 
