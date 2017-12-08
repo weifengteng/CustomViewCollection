@@ -1,16 +1,14 @@
 package com.twf.customview;
 
 import android.content.Intent;
-import android.nfc.Tag;
+import android.os.Bundle;
 import android.os.PersistableBundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
-import android.widget.Button;
 
 import com.twf.customview.headzoomscrollview.HeadZoomScrollActivity;
+import com.twf.customview.imagepull.PullScrollActivity;
 import com.twf.customview.util.LogUtil;
 
 /**
@@ -42,6 +40,12 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, HeadZoomScrollActivity.class);
         startActivity(intent);
 
+    }
+
+    public void doImagePull(View view) {
+        LogUtil.d(TAG, "doImagePull");
+        Intent intent = new Intent(this, PullScrollActivity.class);
+        startActivity(intent);
     }
 
     @Override
