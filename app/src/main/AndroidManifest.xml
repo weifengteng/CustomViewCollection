@@ -25,6 +25,19 @@
         </activity>
 
         <activity android:name=".imagepull.PullScrollActivity"/>
+
+        <activity android:name=".customview1.TwoIncreasingRadiusActivity"
+            android:exported="true"/>
+
+        <activity android:name=".customview2.CustomView2Activity"
+            android:exported="true"/>
+        <activity android:name=".scrollconflict.ScrollConflictActivity"
+            android:exported="true"/>
+        <activity android:name=".nestedscrolling.NestedScrollingActivity1"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:exported="true"/>
+        <activity android:name=".nestedscrolling.NestedScrollingActivity2"
+            android:exported="true"/>
     </application>
 
 </manifest>
